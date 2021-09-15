@@ -43,24 +43,24 @@ function Govern() {
   
 	return (
 		<Container>
-		<Row>
-			<Col>
+		<Row class="mt-5">
+			<Col class="mt-3">
 				<Card border="info" style={{ width: '18rem' }}>
 					<Card.Body>
-					<Card.Text>
-						<div class="token price">
-							<h3>Token Price</h3>
-						</div>
-						<div>
-							<span>price component    </span>
-							UST
-						</div>
-					</Card.Text>
+						<Card.Text>
+							<div class="token price">
+								<h3>Token Price</h3>
+							</div>
+							<div>
+								<span>price component    </span>
+								UST
+							</div>
+						</Card.Text>
 					
 					</Card.Body>
 				</Card>
   			</Col>
-		  	<Col>
+		  	<Col class="mt-3">
 			  <Card border="info" style={{ width: '18rem' }}>
 					<Card.Body>
 					<Card.Text>
@@ -76,7 +76,7 @@ function Govern() {
 					</Card.Body>
 				</Card>
 			</Col>
-		  	<Col>
+		  	<Col class="mt-3">
 			  <Card border="info" style={{ width: '18rem' }}>
 					<Card.Body>
 					<Card.Text>
@@ -92,7 +92,8 @@ function Govern() {
 				</Card>			  
 			</Col>
 		</Row>
-		<Row>
+		
+		<Row class="mt-5">
 		<Row md={4}>
     			<Col xs={12} md={6}>
 					<Card border="info">
