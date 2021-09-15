@@ -53,17 +53,17 @@ function Swap() {
            		</div>
             <div class="col-md-4 col-lg-3 G">
                 <div class="row h-100">
-                    <div class="col-md-6 col-lg-6 B h-50 pb-3">
+                    {/* <div class="col-md-6 col-lg-6 B h-50 pb-3">
                         <div class="card card-inverse card-success h-100">
 
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 B h-50 pb-3">
+                    </div> */}
+                    {/* <div class="col-md-6 col-lg-6 B h-50 pb-3">
                         <div class="card card-inverse bg-success h-100">
 
                         </div>
-                    </div>
-                    <div class="col-md-12 h-50">
+                    </div> */}
+                    <div class="col-md-12 h-50 mt-5">
                         <div class="card card-inverse bg-danger h-200">
 							<div>
 								<Card className="text-center">

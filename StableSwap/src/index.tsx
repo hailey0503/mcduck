@@ -71,7 +71,7 @@ function App() {
       style={{ margin: 20, display: 'flex', flexDirection: 'column', gap: 40 }}
     >
       
-      ****components****
+      //components
     
       <ConnectSample />
       <QuerySample />
