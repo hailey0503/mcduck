@@ -8,7 +8,12 @@ import './style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
+import Card from 'react-bootstrap/Card'
 import { Form, Button, FormGroup, FormControl} from "react-bootstrap";
+import InputGroup from 'react-bootstrap/InputGroup'
+import ButtonGroup from 'react-bootstrap/ButtonGroup'
+import Dropdown from 'react-bootstrap/Dropdown'
+import DropdownButton from 'react-bootstrap/DropdownButton'
 
 
 const mainnet = {
@@ -34,9 +39,44 @@ function Swap() {
 	// get json and reder with for loop
   
 	return (
-	  <div>
-		  <h1>Hello Swap</h1>
-	  </div>
+		<container>
+		
+			<div>
+				<Card className="text-center">
+					<Card.Header>Swap your stable coins</Card.Header>
+						<Card.Body>
+							<Card.Title>Special title treatment</Card.Title>
+							
+					<InputGroup className="mb-3">
+						<DropdownButton
+							variant="outline-secondary"
+							title="From"
+							id="input-group-dropdown-1"
+						>
+						<Dropdown.Item href="#">UST</Dropdown.Item>
+						<Dropdown.Item href="#">USDT</Dropdown.Item>
+						<Dropdown.Item href="#">USCD</Dropdown.Item>
+						</DropdownButton>
+						<FormControl aria-label="Text input with dropdown button" />
+					</InputGroup>
+
+					<InputGroup className="mb-3">
+						<DropdownButton
+							variant="outline-secondary"
+							title="To"
+							id="input-group-dropdown-1"
+						>
+						<Dropdown.Item href="#">UST</Dropdown.Item>
+						<Dropdown.Item href="#">USDT</Dropdown.Item>
+						<Dropdown.Item href="#">USCD</Dropdown.Item>
+						</DropdownButton>
+						<FormControl aria-label="Text input with dropdown button" />
+					</InputGroup>
+						</Card.Body>
+						<Card.Footer className="text-muted">2 days ago</Card.Footer>
+				</Card>
+			</div>
+		</container>
 	);
   }
   
