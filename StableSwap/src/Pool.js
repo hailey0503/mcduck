@@ -10,6 +10,14 @@ import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import Card from 'react-bootstrap/Card'
 import { Form, Button, FormGroup, FormControl} from "react-bootstrap";
+import InputGroup from 'react-bootstrap/InputGroup'
+import ButtonGroup from 'react-bootstrap/ButtonGroup'
+import Dropdown from 'react-bootstrap/Dropdown'
+import DropdownButton from 'react-bootstrap/DropdownButton'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+
 
 
 const mainnet = {
@@ -35,33 +43,121 @@ function Pool() {
 	// get json and reder with for loop
   
 	return (
-	  <div>
-		  <h1>Hello Pool</h1>
-		  <Card>
-  <Card.Header>
-    <Nav variant="tabs" defaultActiveKey="#first">
-      <Nav.Item>
-        <Nav.Link href="#first">Active</Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Nav.Link href="#link">Link</Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Nav.Link href="#disabled" disabled>
-          Disabled
-        </Nav.Link>
-      </Nav.Item>
-    </Nav>
-  </Card.Header>
-  <Card.Body>
-    <Card.Title>Special title treatment</Card.Title>
-    <Card.Text>
-      With supporting text below as a natural lead-in to additional content.
-    </Card.Text>
-    <Button variant="primary">Go somewhere</Button>
-  </Card.Body>
-</Card>
-	  </div>
+
+		<Container>
+  			<Row md={4}>
+    			<Col xs={12} md={6}>
+					<Card>
+						<Card.Header>
+							<Nav variant="tabs" defaultActiveKey="#first">
+							<Nav.Item>
+								<Nav.Link href="#first">Provide</Nav.Link>
+							</Nav.Item>
+							<Nav.Item>
+								<Nav.Link href="#link">Withdraw</Nav.Link>
+							</Nav.Item>
+							
+							</Nav>
+						</Card.Header>
+						<Card.Body>
+							<Card.Title>Create LP</Card.Title>
+							<div>
+								<Card className="text-center">
+									
+									<Card.Body>
+											
+										<InputGroup className="mb-3">
+											<DropdownButton
+												variant="outline-secondary"
+												
+												id="input-group-dropdown-1"
+											>
+											<Dropdown.Item href="#">UST</Dropdown.Item>
+											<Dropdown.Item href="#">USDT</Dropdown.Item>
+											<Dropdown.Item href="#">USCD</Dropdown.Item>
+											</DropdownButton>
+											<FormControl aria-label="Text input with dropdown button" />
+										</InputGroup>
+
+
+										<InputGroup className="mb-3">
+											<DropdownButton
+												variant="outline-secondary"
+												id="input-group-dropdown-1"
+											>
+											<Dropdown.Item href="#">UST</Dropdown.Item>
+											<Dropdown.Item href="#">USDT</Dropdown.Item>
+											<Dropdown.Item href="#">USCD</Dropdown.Item>
+											</DropdownButton>
+											<FormControl aria-label="Text input with dropdown button" />
+										</InputGroup>
+											</Card.Body>
+									</Card>
+								</div>
+								
+								<Button variant="primary">Create your LP token</Button>
+							</Card.Body>
+					</Card>
+  				</Col>
+
+    			<Col xs={12} md={6}>
+				<Card>
+						<Card.Header>
+							<Nav variant="tabs" defaultActiveKey="#first">
+							<Nav.Item>
+								<Nav.Link href="#first">Stake</Nav.Link>
+							</Nav.Item>
+							<Nav.Item>
+								<Nav.Link href="#link">Unstake</Nav.Link>
+							</Nav.Item>
+							
+							</Nav>
+						</Card.Header>
+						<Card.Body>
+							<Card.Title>Stake LP</Card.Title>
+							<div>
+								<Card className="text-center">
+									
+									<Card.Body>
+											
+										<InputGroup className="mb-3">
+											<DropdownButton
+												variant="outline-secondary"
+												
+												id="input-group-dropdown-1"
+											>
+											<Dropdown.Item href="#">UST</Dropdown.Item>
+											<Dropdown.Item href="#">USDT</Dropdown.Item>
+											<Dropdown.Item href="#">USCD</Dropdown.Item>
+											</DropdownButton>
+											<FormControl aria-label="Text input with dropdown button" />
+										</InputGroup>
+
+
+										<InputGroup className="mb-3">
+											<DropdownButton
+												variant="outline-secondary"
+												id="input-group-dropdown-1"
+											>
+											<Dropdown.Item href="#">UST</Dropdown.Item>
+											<Dropdown.Item href="#">USDT</Dropdown.Item>
+											<Dropdown.Item href="#">USCD</Dropdown.Item>
+											</DropdownButton>
+											<FormControl aria-label="Text input with dropdown button" />
+										</InputGroup>
+											</Card.Body>
+									</Card>
+								</div>
+								
+								<Button variant="primary">Stake your LP token</Button>
+							</Card.Body>
+					</Card>
+				</Col>
+  			</Row>
+		</Container>
+
+
+	  
 	);
   }
   
