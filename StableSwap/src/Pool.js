@@ -47,7 +47,7 @@ function Pool() {
 		<Container>
   			<Row md={4}>
     			<Col xs={12} md={6}>
-					<Card>
+					<Card border="info">
 						<Card.Header>
 							<Nav variant="tabs" defaultActiveKey="#first">
 							<Nav.Item>
@@ -101,7 +101,7 @@ function Pool() {
   				</Col>
 
     			<Col xs={12} md={6}>
-				<Card>
+				<Card border="info">
 						<Card.Header>
 							<Nav variant="tabs" defaultActiveKey="#first">
 							<Nav.Item>

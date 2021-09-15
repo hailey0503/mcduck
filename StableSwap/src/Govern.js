@@ -8,7 +8,15 @@ import './style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
+import Card from 'react-bootstrap/Card'
 import { Form, Button, FormGroup, FormControl} from "react-bootstrap";
+import InputGroup from 'react-bootstrap/InputGroup'
+import ButtonGroup from 'react-bootstrap/ButtonGroup'
+import Dropdown from 'react-bootstrap/Dropdown'
+import DropdownButton from 'react-bootstrap/DropdownButton'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
 
 const mainnet = {
@@ -34,9 +42,142 @@ function Govern() {
 	// get json and reder with for loop
   
 	return (
-	  <div>
-		  <h1>Hello Gorvern</h1>
-	  </div>
+		<Container>
+		<Row>
+			<Col>
+				<Card border="info" style={{ width: '18rem' }}>
+					<Card.Body>
+					<Card.Text>
+						<div class="token price">
+							<h3>Token Price</h3>
+						</div>
+						<div>
+							<span>price component    </span>
+							UST
+						</div>
+					</Card.Text>
+					
+					</Card.Body>
+				</Card>
+  			</Col>
+		  	<Col>
+			  <Card border="info" style={{ width: '18rem' }}>
+					<Card.Body>
+					<Card.Text>
+						<div class="token price">
+							<h3>Total Staked</h3>
+						</div>
+						<div>
+							<span>staked component    </span>
+							UST
+						</div>
+					</Card.Text>
+					
+					</Card.Body>
+				</Card>
+			</Col>
+		  	<Col>
+			  <Card border="info" style={{ width: '18rem' }}>
+					<Card.Body>
+					<Card.Text>
+						<div class="token price">
+							<h3>Total Earned</h3>
+						</div>
+						<div>
+							<span>earned component    </span>
+							UST
+						</div>
+					</Card.Text>					
+					</Card.Body>
+				</Card>			  
+			</Col>
+		</Row>
+		<Row>
+		<Row md={4}>
+    			<Col xs={12} md={6}>
+					<Card border="info">
+					<Card.Img variant="top" src="holder.js/100px180" />
+						<Card.Header>
+							<Nav variant="tabs" defaultActiveKey="#first">
+							<Nav.Item>
+								<Nav.Link href="#first">Stake</Nav.Link>
+							</Nav.Item>
+							<Nav.Item>
+								<Nav.Link href="#link">Unstake</Nav.Link>
+							</Nav.Item>
+							
+							</Nav>
+						</Card.Header>
+						<Card.Body>
+							<Card.Title>Gov Stake</Card.Title>
+							<div>
+								
+								<Form.Control size="lg" type="text" placeholder="0.00" />	
+							</div>
+								
+								<Button variant="primary">Stake</Button>
+							</Card.Body>
+					</Card>
+  				</Col>
+
+    			<Col xs={12} md={6}>
+				<Card border="info">
+				<Card.Img variant="top" src="holder.js/100px180" />
+				<span></span>
+						<Card.Header>
+							<Nav variant="tabs" defaultActiveKey="#first">
+							<Nav.Item>
+								<Nav.Link href="#first">Stake</Nav.Link>
+							</Nav.Item>
+							<Nav.Item>
+								<Nav.Link href="#link">Unstake</Nav.Link>
+							</Nav.Item>
+							
+							</Nav>
+						</Card.Header>
+						<Card.Body>
+							<Card.Title>Stake LP</Card.Title>
+							<div>
+								<Card className="text-center">
+									
+									<Card.Body>
+											
+										<InputGroup className="mb-3">
+											<DropdownButton
+												variant="outline-secondary"
+												
+												id="input-group-dropdown-1"
+											>
+											<Dropdown.Item href="#">UST</Dropdown.Item>
+											<Dropdown.Item href="#">USDT</Dropdown.Item>
+											<Dropdown.Item href="#">USCD</Dropdown.Item>
+											</DropdownButton>
+											<FormControl aria-label="Text input with dropdown button" />
+										</InputGroup>
+
+
+										<InputGroup className="mb-3">
+											<DropdownButton
+												variant="outline-secondary"
+												id="input-group-dropdown-1"
+											>
+											<Dropdown.Item href="#">UST</Dropdown.Item>
+											<Dropdown.Item href="#">USDT</Dropdown.Item>
+											<Dropdown.Item href="#">USCD</Dropdown.Item>
+											</DropdownButton>
+											<FormControl aria-label="Text input with dropdown button" />
+										</InputGroup>
+											</Card.Body>
+									</Card>
+								</div>
+								
+								<Button variant="primary">Stake your LP token</Button>
+							</Card.Body>
+					</Card>
+				</Col>
+  			</Row>
+		</Row>
+	  </Container>
 	);
   }
   
